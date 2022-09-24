@@ -1,2 +1,114 @@
 @import '../../../app/assets/css/scss/mixins.scss';
 @import '../../../app/assets/css/scss/color-variables.scss';
+
+.tpm-view-dropped {
+  padding: 20px;
+
+  &__title{
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+  &__row {
+    @include flexrow;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid $row-border;
+    margin: 0 0 20px 0;    
+    background-color: $white-color;
+  }
+  &__cand-icon {
+    margin: 0 10px 0 0;
+    width: 5%;
+  }
+  &__cand-icon img {
+    width: 56px;
+    height: 56px;
+    border-radius: 30px;
+    background-size: 100%;
+  }
+  &__cand-details {
+    @include flexcolumn;
+    width: 20%;
+    padding: 0 5px;
+    margin: 0 10px 0 0;
+  }
+  &__cand-name {
+    color: $candidate-name;
+    font-weight: 600;
+  }
+  &__cand-role {
+    color: $grey-label;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: ellipsis;
+    height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  &__cand-location {
+    color: $grey-label;
+    font-size: 14px;
+  }
+  &__cand-dropped {
+    border-right: 1px solid $seperator;
+    padding: 0 20px 0 0;
+    margin: 0 20px 0 0;
+    text-align: center;
+    min-height: 80px;
+    width: 10%;
+    &.ref-check {
+      width: 5%;
+    }
+    &.vcenter {
+      @include flexcolumn;
+      align-items: center;
+      justify-content: center;
+    }
+    &.last {
+      border: none;
+    }
+  }
+  &__cand-value {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 5px 0;
+    color: $grey-label;
+  }
+  &__cand-comments {
+    width: 22%;
+    font-size: 12px;
+    color: $grey-label;
+  }
+  &__option {
+    margin: 0 15px;
+    width: 3%;
+  }
+  &__option-icon {
+    @include spriteimage;
+    background-position: -36px -428px;
+  }
+  &__cand-status {
+    @include flexrow;
+    margin: 5px 0 0 0;
+  }
+  &__cand-status-icon{
+    &.hire {
+      background-position: -38px -705px;
+    }
+    &.nohire {
+      background-position: -68px -360px;
+    }
+    &.notconfirm {
+      background-position: -38px -559px;
+    }
+    &.calendar {
+      background-position: 0px -286px;
+    }
+  }
+  &__cand-reference {
+    font-weight: 400;
+    font-size: 18px;
+    color: $candidate-name;
+  }
+}

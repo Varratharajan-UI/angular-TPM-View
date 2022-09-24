@@ -1,0 +1,9 @@
+@import './mixins.scss';
+@import './color-variables.scss';
+
+.spriteimage {
+  @include spriteimage;
+}
+.redlabel {
+  color: $redlabel !important;
+}

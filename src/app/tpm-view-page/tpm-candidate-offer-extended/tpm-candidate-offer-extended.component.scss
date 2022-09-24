@@ -10,15 +10,17 @@
   }
   &__content {
     background-color: $white-color;
-    border: 1px solid $row-border;
   }
   &__row {
     @include flexrow;
     align-items: center;
+    justify-content: space-between;
     padding: 20px;
+    border: 1px solid $row-border;
   }
   &__cand-icon {
     margin: 0 10px 0 0;
+    width: 5%;
   }
   &__cand-icon img {
     width: 56px;
@@ -28,7 +30,9 @@
   }
   &__cand-details {
     @include flexcolumn;
-    min-width: 18%;
+    width: 23%;
+    padding: 0 5px;
+    margin: 0 10px 0 0;
   }
   &__cand-name {
     color: $candidate-name;
@@ -46,6 +50,11 @@
     border-right: 1px solid $seperator;
     padding: 0 20px 0 0;
     margin: 0 20px 0 0;
+    min-height: 60px;
+    width: 11%;
+    &.bcheck {
+      width: 5%;
+    }
     &.last {
       border: none;
     }
@@ -56,12 +65,13 @@
     margin: 5px 0;
   }
   &__cand-comments {
-    width: 25%;
+    width: 22%;
     font-size: 12px;
     color: $grey-label;
   }
   &__option {
     margin: 0 15px;
+    width: 3%;
   }
   &__option-icon {
     @include spriteimage;
@@ -70,16 +80,18 @@
   &__cand-status {
     @include flexrow;
   }
-  &__cand-status-up {
-    @include spriteimage;
-    background-position: -36px -428px;
-  }
-  &__cand-status-down {
-    @include spriteimage;
-    background-position: -36px -428px;
-  }
-  &__cand-status-dropdown {
-    @include spriteimage;
-    background-position: -36px -428px;
+  &__cand-status-icon{
+    &.success {
+      background-position: -66px -322px;
+    }
+    &.failure {
+      background-position: -68px -360px;
+    }
+    &.notconfirm {
+      background-position: -38px -559px;
+    }
+    &.dropdown {
+      background-position: -58px -287px;
+    }
   }
 }

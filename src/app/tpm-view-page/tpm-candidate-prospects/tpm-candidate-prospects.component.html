@@ -1,0 +1,167 @@
+<div class="tpm-view-prospects">
+  <div class="tpm-view-prospects__title">Prospects</div>
+  <div class="tpm-view-prospects__content" cdkDropList (cdkDropListDropped)="drop($event)">
+    <!--Prospects table header-->
+    <div class="tpm-view-prospects__content-header">
+      <div class="tpm-view-prospects__content-header-item1">Candidate Details</div>
+      <div class="tpm-view-prospects__content-header-item2">Interview Schedule</div>
+      <div class="tpm-view-prospects__content-header-item3">Reference Check</div>
+      <div class="tpm-view-prospects__content-header-item4">Comments</div>
+    </div>
+
+    <!--Prospects slider content-->
+    <div class="tpm-view-prospects__slider">
+      <div class="tpm-view-prospects__slider-content">
+        <div class="tpm-view-prospects__slider prev"></div>
+        <div class="tpm-view-prospects__slider-items-list">
+          <div class="tpm-view-prospects__slider-item">
+            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+          </div>
+          <div class="tpm-view-prospects__slider-item">
+            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+          </div>
+          <div class="tpm-view-prospects__slider-item">
+            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+          </div>
+          <div class="tpm-view-prospects__slider-item">
+            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+          </div>
+        </div>
+        <div class="tpm-view-prospects__slider next"></div>
+      </div>
+      <div class="tpm-view-prospects__content-header-item5">Leads</div>
+      <div class="tpm-view-prospects__content-header-item5">Captured</div>
+    </div>
+    <!--repeat row div for dynamic data-->
+    <div class="tpm-view-prospects__row" cdkDrag>
+      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+      <div class="tpm-view-prospects__cand-icon">
+        <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+      </div>
+      <div class="tpm-view-prospects__cand-details">
+        <div class="tpm-view-prospects__cand-name">Kunjan Kumar</div>
+        <div class="tpm-view-prospects__cand-role">
+          Director, Housing and Development Department
+        </div>
+        <div class="tpm-view-prospects__cand-location">New Delhi</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects">
+        <div class="tpm-view-prospects__cand-status-icon spriteimage hire"></div>
+        <div class="tpm-view-prospects__cand-role">Hire</div>
+        <div class="tpm-view-prospects__cand-value">21 Jul 2018</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter">
+        <div class="tpm-view-prospects__cand-value">Awaiting Feedback</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects">
+        <div class="tpm-view-prospects__cand-status-icon spriteimage notconfirm"></div>
+        <div class="tpm-view-prospects__cand-role">No Hire</div>
+        <div class="tpm-view-prospects__cand-value">01 Jul 2020</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter last">
+        <div class="tpm-view-prospects__cand-status-icon spriteimage calendar"></div>
+        <div class="tpm-view-prospects__cand-value">01 Jul 2020</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter ref-check">
+        <div class="tpm-view-prospects__cand-reference">7</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter ref-check last">
+        <div class="tpm-view-prospects__cand-reference">3</div>
+      </div>
+      <div class="tpm-view-prospects__cand-comments">
+        Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Lacinia ultrices QuisqueQuisque.
+      </div>
+      <div class="tpm-view-prospects__option">
+        <span class="tpm-view-prospects__option-icon"></span>
+      </div>
+    </div>
+
+    <!--2nd row-->
+    <div class="tpm-view-prospects__row" cdkDrag>
+      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+      <div class="tpm-view-prospects__cand-icon">
+        <img src="https://www.bigstockphoto.com/images/homepage/module-5.jpg" />
+      </div>
+      <div class="tpm-view-prospects__cand-details">
+        <div class="tpm-view-prospects__cand-name">Sanket Joshi</div>
+        <div class="tpm-view-prospects__cand-role">
+          Director, Piramal Enterprises
+        </div>
+        <div class="tpm-view-prospects__cand-location">Kolkatta</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects">
+        <div class="tpm-view-prospects__cand-status-icon spriteimage hire"></div>
+        <div class="tpm-view-prospects__cand-role">Hire</div>
+        <div class="tpm-view-prospects__cand-value">21 Jul 2018</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter">
+        <div class="tpm-view-prospects__cand-value">Awaiting Feedback</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects">
+        <div class="tpm-view-prospects__cand-status-icon spriteimage nohire"></div>
+        <div class="tpm-view-prospects__cand-role">No Hire</div>
+        <div class="tpm-view-prospects__cand-value">01 Jul 2020</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter last">
+        -
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter ref-check">
+        <div class="tpm-view-prospects__cand-reference">10</div>
+      </div>
+      <div class="tpm-view-prospects__cand-prospects vcenter ref-check last">
+        <div class="tpm-view-prospects__cand-reference">3</div>
+      </div>
+      <div class="tpm-view-prospects__cand-comments">
+        Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Lacinia ultrices QuisqueQuisque.
+      </div>
+      <div class="tpm-view-prospects__option">
+        <span class="tpm-view-prospects__option-icon"></span>
+      </div>
+    </div>
+
+  <!--3rd row-->
+  <div class="tpm-view-prospects__row" cdkDrag>
+    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    <div class="tpm-view-prospects__cand-icon">
+      <img src="https://www.bigstockphoto.com/images/homepage/module-6.jpg" />
+    </div>
+    <div class="tpm-view-prospects__cand-details">
+      <div class="tpm-view-prospects__cand-name">Sanjay Kapoor</div>
+      <div class="tpm-view-prospects__cand-role">
+        Director, Housing and Development Department
+      </div>
+      <div class="tpm-view-prospects__cand-location">New Delhi</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects">
+      <div class="tpm-view-prospects__cand-status-icon spriteimage hire"></div>
+      <div class="tpm-view-prospects__cand-role">Hire</div>
+      <div class="tpm-view-prospects__cand-value">21 Jul 2018</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects vcenter">
+      <div class="tpm-view-prospects__cand-value redlabel">Awaiting Feedback</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects">
+      <div class="tpm-view-prospects__cand-status-icon spriteimage nohire"></div>
+      <div class="tpm-view-prospects__cand-role">No Hire</div>
+      <div class="tpm-view-prospects__cand-value">01 Jul 2020</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects vcenter last">
+      <div class="tpm-view-prospects__cand-status-icon spriteimage calendar"></div>
+      <div class="tpm-view-prospects__cand-value">01 Jul 2020</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects vcenter ref-check">
+      <div class="tpm-view-prospects__cand-reference">7</div>
+    </div>
+    <div class="tpm-view-prospects__cand-prospects vcenter ref-check last">
+      <div class="tpm-view-prospects__cand-reference">3</div>
+    </div>
+    <div class="tpm-view-prospects__cand-comments">
+      Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Lacinia ultrices QuisqueQuisque.
+    </div>
+    <div class="tpm-view-prospects__option">
+      <span class="tpm-view-prospects__option-icon"></span>
+    </div>
+  </div>
+
+  </div>
+</div>
