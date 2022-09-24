@@ -1,6 +1,6 @@
 <div class="tpm-view-prospects">
   <div class="tpm-view-prospects__title">Prospects</div>
-  <div class="tpm-view-prospects__content" cdkDropList (cdkDropListDropped)="drop($event)">
+  <div class="tpm-view-prospects__content">
     <!--Prospects table header-->
     <div class="tpm-view-prospects__content-header">
       <div class="tpm-view-prospects__content-header-item1">Candidate Details</div>
@@ -33,8 +33,7 @@
       <div class="tpm-view-prospects__content-header-item5">Captured</div>
     </div>
     <!--repeat row div for dynamic data-->
-    <div class="tpm-view-prospects__row" cdkDrag>
-      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    <div class="tpm-view-prospects__row">
       <div class="tpm-view-prospects__cand-icon">
         <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
       </div>
@@ -77,8 +76,7 @@
     </div>
 
     <!--2nd row-->
-    <div class="tpm-view-prospects__row" cdkDrag>
-      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+    <div class="tpm-view-prospects__row">
       <div class="tpm-view-prospects__cand-icon">
         <img src="https://www.bigstockphoto.com/images/homepage/module-5.jpg" />
       </div>
@@ -120,8 +118,7 @@
     </div>
 
   <!--3rd row-->
-  <div class="tpm-view-prospects__row" cdkDrag>
-    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
+  <div class="tpm-view-prospects__row" >
     <div class="tpm-view-prospects__cand-icon">
       <img src="https://www.bigstockphoto.com/images/homepage/module-6.jpg" />
     </div>

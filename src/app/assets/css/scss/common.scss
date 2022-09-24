@@ -1,6 +1,9 @@
 @import './mixins.scss';
 @import './color-variables.scss';
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .spriteimage {
   @include spriteimage;
 }

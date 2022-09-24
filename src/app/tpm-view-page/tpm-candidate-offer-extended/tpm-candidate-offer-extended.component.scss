@@ -4,7 +4,7 @@
 .tpm-view-offer {
   padding: 20px;
 
-  &__title{
+  &__title {
     margin: 0 0 10px 0;
     font-weight: 600;
   }
@@ -52,6 +52,7 @@
     margin: 0 20px 0 0;
     min-height: 60px;
     width: 11%;
+    position: relative;
     &.bcheck {
       width: 5%;
     }
@@ -72,6 +73,25 @@
   &__option {
     margin: 0 15px;
     width: 3%;
+    position: relative;
+  }
+  &__option-list {
+    position: absolute;
+    left: -60px;
+    width: 160px;
+    padding: 20px;
+    background-color: $white-color;
+    border: 1px solid $border;
+    box-shadow: 0px 6px 10px rgba(188, 188, 188, 0.357988);
+    border-radius: 5px;
+  }
+  &__option-list-item {
+    border-bottom: 1px solid $border;
+    height: 40px;
+    line-height: 40px;
+    &.last {
+      border: none;
+    }
   }
   &__option-icon {
     @include spriteimage;
@@ -80,7 +100,31 @@
   &__cand-status {
     @include flexrow;
   }
-  &__cand-status-icon{
+  &__cand-status-option {
+    @include flexcolumn;
+    margin: 0px;
+    position: absolute;
+    left: -5px;
+    top: 45px;
+    padding: 10px;
+    background: $white-color;
+    border: 1px solid $border;
+    box-shadow: 0px 6px 10px rgba(188, 188, 188, 0.357988);
+    border-radius: 5px;
+    &__cand-status-icon {
+      margin: 10px;
+    }
+  }
+  &__cand-status-option > &__cand-status-icon {
+    margin: 10px;
+  }
+  &__tpm-view-offer__option-list {
+    padding: 10px;
+  }
+  &__cand-status-icon-hr {
+    border-bottom: 1px solid $seperator;
+  }
+  &__cand-status-icon {
     &.success {
       background-position: -66px -322px;
     }
@@ -92,6 +136,11 @@
     }
     &.dropdown {
       background-position: -58px -287px;
+    }
+    &.active {
+      width: 1px;
+      height: 1px;
+      background: $active;
     }
   }
 }

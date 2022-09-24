@@ -26,25 +26,70 @@
         <div class="tpm-view-offer__cand-value">21 Sep 2020</div>
       </div>
       <div class="tpm-view-offer__cand-offer">
-        <div class="tpm-view-offer__cand-role">Joining status</div>        
-        <div class="tpm-view-offer__cand-status">
+        <div class="tpm-view-offer__cand-role">Joining status</div>
+        <div
+          class="tpm-view-offer__cand-status"
+          (click)="openOption('joiningbonus')"
+        >
           <span class="tpm-view-offer__cand-status-icon spriteimage success"></span>
           <span class="tpm-view-offer__cand-status-icon spriteimage dropdown"></span>
+        </div>
+        <div
+          *ngIf="joiningStatusOption"
+          class="tpm-view-offer__cand-status-option"
+        >
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage success"
+          ></div>
+          <span class="tpm-view-offer__cand-status-icon-hr"></span>
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage failure"
+          ></div>
+          <span class="tpm-view-offer__cand-status-icon-hr"></span>
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage notconfirm"
+          ></div>
         </div>
       </div>
       <div class="tpm-view-offer__cand-offer last bcheck">
-        <div class="tpm-view-offer__cand-role">B.V</div>        
-        <div class="tpm-view-offer__cand-status">
-          <span class="tpm-view-offer__cand-status-icon spriteimage success"></span>
-          <span class="tpm-view-offer__cand-status-icon spriteimage dropdown"></span>
+        <div class="tpm-view-offer__cand-role">B.V</div>
+        <div
+          class="tpm-view-offer__cand-status"
+          (click)="openOption('backgroundcheck')"
+        >
+          <span
+            class="tpm-view-offer__cand-status-icon spriteimage success"
+          ></span>
+          <span
+            class="tpm-view-offer__cand-status-icon spriteimage dropdown"
+          ></span>
+        </div>
+        <div *ngIf="bvStatusOption" class="tpm-view-offer__cand-status-option">
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage success"
+          ></div>
+          <span class="tpm-view-offer__cand-status-icon-hr"></span>
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage failure"
+          ></div>
+          <span class="tpm-view-offer__cand-status-icon-hr"></span>
+          <div
+            class="tpm-view-offer__cand-status-icon spriteimage notconfirm"
+          ></div>
         </div>
       </div>
       <div class="tpm-view-offer__cand-comments">
-        Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices. Pharetra. Lacinia ultrices QuisqueQuisque.
+        Metus etiam. Platea aliquet vulputate. Egestas. Lacinia ultrices.
+        Pharetra. Lacinia ultrices QuisqueQuisque.
       </div>
-      <div class="tpm-view-offer__option">
+      <div class="tpm-view-offer__option" (click)="openOption('offeroption')">
         <span class="tpm-view-offer__option-icon"></span>
+        <div *ngIf="mainStatusOption" class="tpm-view-offer__option-list">
+          <div class="tpm-view-offer__option-list-item">Edit Comment</div>
+          <div class="tpm-view-offer__option-list-item last">Hide Candidate</div>
+        </div>
       </div>
+      
     </div>
   </div>
 </div>
