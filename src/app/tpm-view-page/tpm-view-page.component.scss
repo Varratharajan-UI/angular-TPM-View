@@ -1,0 +1,24 @@
+@import '../../app/assets/css/scss/mixins.scss';
+@import '../../app/assets/css/scss/color-variables.scss';
+
+.tpm-view{
+  @include flexcolumn;
+
+  &__header {   
+    @include flexrow;
+    padding: 20px;
+    font-weight: bold;
+  }
+  &__back-arrow {
+    @include spriteimage;
+    margin: 0 10px 0 0;
+    background-position: -274px -560px;
+    &:hover {
+      background-position: -194px -560px;
+    }
+  }
+  &__content {
+    background-color: $main-content;
+    padding: 20px;
+  }
+}
