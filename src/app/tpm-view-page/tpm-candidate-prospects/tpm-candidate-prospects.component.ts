@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-tpm-candidate-prospects',
@@ -23,6 +24,22 @@ export class TpmCandidateProspectsComponent implements OnInit {
     {image: 'https://www.bigstockphoto.com/images/homepage/module-1.jpg'},
     {image: 'https://www.bigstockphoto.com/images/homepage/module-5.jpg'}
   ];
+
+  offerResponse = [
+    {
+      'candidateName': 'Sanket Joshi'
+    },
+    {
+      'candidateName': 'Sanjay Kapoor'
+    }, 
+    {
+      'candidateName': 'Anil Kapoor'
+    }
+  ]
+
+  drop(event: CdkDragDrop<string[]>) {
+    moveItemInArray(this.offerResponse, event.previousIndex, event.currentIndex);
+  }
 
   ngOnInit() {}
 }

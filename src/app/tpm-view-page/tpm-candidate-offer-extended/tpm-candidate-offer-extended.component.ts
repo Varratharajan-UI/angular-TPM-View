@@ -9,6 +9,7 @@ export class TpmCandidateOfferExtendedComponent implements OnInit {
   public joiningStatusOption = false;
   public bvStatusOption = false;
   public mainStatusOption = false;
+
   constructor() { }
 
   ngOnInit() {
