@@ -33,6 +33,9 @@
     <!--repeat row div for dynamic data-->
     <div cdkDropList (cdkDropListDropped)="drop($event)">
       <div class="tpm-view-prospects__row" *ngFor="let item of offerResponse" cdkDrag>
+        <div cdkDragHandle>
+          <div class="tpm-view-prospects__drag-icon"></div>
+        </div>
         <div class="tpm-view-prospects__cand-icon">
           <img src= {{item.image}} />
         </div>

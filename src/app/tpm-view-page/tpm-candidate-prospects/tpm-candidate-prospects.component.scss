@@ -85,7 +85,6 @@
     border: 1px solid $row-border;
     margin: 0 0 20px 0;    
     background-color: $white-color;
-    cursor: all-scroll;
   }
   &__cand-icon {
     margin: 0 10px 0 0;
@@ -96,6 +95,12 @@
     height: 56px;
     border-radius: 30px;
     background-size: 100%;
+  }
+  &__drag-icon {
+    @include spriteimage;
+    background-position: 0 -1080px;
+    transform: rotate(90deg);
+    margin: 0 25px 0 -50px;
   }
   &__cand-details {
     @include flexcolumn;
