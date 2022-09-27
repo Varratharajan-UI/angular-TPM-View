@@ -77,7 +77,6 @@
     background-size: 100%;
   }
 
-
   &__row {
     @include flexrow;
     align-items: center;
@@ -86,6 +85,7 @@
     border: 1px solid $row-border;
     margin: 0 0 20px 0;    
     background-color: $white-color;
+    cursor: all-scroll;
   }
   &__cand-icon {
     margin: 0 10px 0 0;

@@ -27,13 +27,16 @@ export class TpmCandidateProspectsComponent implements OnInit {
 
   offerResponse = [
     {
-      'candidateName': 'Sanket Joshi'
+      'candidateName': 'Sanket Joshi',
+      'image': 'https://www.bigstockphoto.com/images/homepage/module-1.jpg'
     },
     {
-      'candidateName': 'Sanjay Kapoor'
+      'candidateName': 'Sanjay Kapoor',
+      'image': 'https://www.bigstockphoto.com/images/homepage/module-5.jpg'
     }, 
     {
-      'candidateName': 'Anil Kapoor'
+      'candidateName': 'Anil Kapoor',
+      'image': 'https://www.bigstockphoto.com/images/homepage/module-3.jpg'
     }
   ]
 

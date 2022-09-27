@@ -34,7 +34,7 @@
     <div cdkDropList (cdkDropListDropped)="drop($event)">
       <div class="tpm-view-prospects__row" *ngFor="let item of offerResponse" cdkDrag>
         <div class="tpm-view-prospects__cand-icon">
-          <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
+          <img src= {{item.image}} />
         </div>
         <div class="tpm-view-prospects__cand-details">
           <div class="tpm-view-prospects__cand-name">{{item.candidateName}}</div>
