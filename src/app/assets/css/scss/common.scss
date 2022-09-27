@@ -12,7 +12,7 @@ body {
 }
 
 .carousel-control-prev {
-  left: -60px !important;
+  left: -50px !important;
 }
 .carousel-control-next {
   right: -60px !important;
@@ -24,4 +24,8 @@ body {
 .carousel-control-next-icon {
   @include spriteimage;
   background-position: -38px -356px;
+}
+.carousel-item {
+  padding: 10px;
+  margin: 0px 10px 0 10px;
 }
