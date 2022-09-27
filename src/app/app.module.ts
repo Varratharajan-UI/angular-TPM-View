@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { AppComponent } from './app.component';
 import { TpmViewPageComponent } from './tpm-view-page/tpm-view-page.component';
@@ -9,7 +10,7 @@ import { TpmCandidateDroppedComponent } from './tpm-view-page/tpm-candidate-drop
 import { TpmCandidateProspectsComponent } from './tpm-view-page/tpm-candidate-prospects/tpm-candidate-prospects.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
+  imports:      [ BrowserModule, FormsModule,CarouselModule.forRoot(), ],
   declarations: [ 
     AppComponent,
     TpmViewPageComponent,

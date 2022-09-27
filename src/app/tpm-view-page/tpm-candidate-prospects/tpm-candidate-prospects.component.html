@@ -12,26 +12,24 @@
     <!--Prospects slider content-->
     <div class="tpm-view-prospects__slider">
       <div class="tpm-view-prospects__slider-content">
-        <div class="tpm-view-prospects__slider prev"></div>
         <div class="tpm-view-prospects__slider-items-list">
-          <div class="tpm-view-prospects__slider-item">
-            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
-          </div>
-          <div class="tpm-view-prospects__slider-item">
-            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
-          </div>
-          <div class="tpm-view-prospects__slider-item">
-            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
-          </div>
-          <div class="tpm-view-prospects__slider-item">
-            <img src="https://www.bigstockphoto.com/images/homepage/module-1.jpg" />
-          </div>
+          <carousel [itemsPerSlide]="itemsPerSlide"
+                  [singleSlideOffset]="singleSlideOffset"
+                  [noWrap]="!noWrap"
+                  [interval]="0"
+                  [startFromIndex]="0"
+                  [showIndicators]="showIndicator">
+            <slide *ngFor="let slide of slides; let index=index">
+              <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
+              
+            </slide>
+          </carousel>
         </div>
-        <div class="tpm-view-prospects__slider next"></div>
       </div>
       <div class="tpm-view-prospects__content-header-item5">Leads</div>
       <div class="tpm-view-prospects__content-header-item5">Captured</div>
     </div>
+
     <!--repeat row div for dynamic data-->
     <div class="tpm-view-prospects__row">
       <div class="tpm-view-prospects__cand-icon">

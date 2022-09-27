@@ -10,3 +10,18 @@ body {
 .redlabel {
   color: $redlabel !important;
 }
+
+.carousel-control-prev {
+  left: -60px !important;
+}
+.carousel-control-next {
+  right: -60px !important;
+}
+.carousel-control-prev-icon {
+  @include spriteimage;
+  background-position: -38px -390px;
+}
+.carousel-control-next-icon {
+  @include spriteimage;
+  background-position: -38px -356px;
+}

@@ -78,7 +78,7 @@
   &__option-list {
     position: absolute;
     left: -60px;
-    width: 160px;
+    width: 170px;
     padding: 20px;
     background-color: $white-color;
     border: 1px solid $border;
@@ -89,6 +89,10 @@
     border-bottom: 1px solid $border;
     height: 40px;
     line-height: 40px;
+    color: $grey-label;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 13px;
     &.last {
       border: none;
     }
