@@ -1,10 +1,8 @@
 /* Add application styles & imports to this file! */
-@import './styles/_variables';
 @import 'bootstrap/scss/bootstrap';
 
 html,
 body {
-  color: $dc;
   margin: 0;
   padding: 0;
 }

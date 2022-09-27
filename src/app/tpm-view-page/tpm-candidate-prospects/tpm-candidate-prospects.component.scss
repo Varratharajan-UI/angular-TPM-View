@@ -39,6 +39,7 @@
     text-transform: uppercase;
     color: $grey-label;
     font-size: 12px;
+    text-align: center;
   }
   &__slider {
     @include flexrow;
@@ -112,9 +113,12 @@
     font-size: 14px;
     width: 100%;
     text-overflow: ellipsis;
-    height: 24px;
+    height: 20px;
     white-space: nowrap;
     overflow: hidden;
+    &.small {
+      font-size: 12px;
+    }
   }
   &__cand-location {
     color: $grey-label;
@@ -144,6 +148,9 @@
     font-size: 14px;
     margin: 5px 0;
     color: $grey-label;
+    &.small {
+      font-size: 12px;
+    }
   }
   &__cand-comments {
     width: 22%;
